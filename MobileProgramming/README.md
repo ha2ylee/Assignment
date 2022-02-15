@@ -1,4 +1,4 @@
-<p style={text-size: 25px; bold}모바일 프로그래밍</p>
+<p style={text-size: 25px; bold}>모바일 프로그래밍</p>
 
 2021.10 ~ 2021.12
 
