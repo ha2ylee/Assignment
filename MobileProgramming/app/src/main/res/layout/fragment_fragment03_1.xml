@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".GroupRoomActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/border_layout"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:elevation="30px">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="시급: ">
+
+            </TextView>
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scdream"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:hint="단위를 빼고 시급을 입력해주세요.">
+
+            </EditText>
+            <Button
+                android:id="@+id/btn_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/scdream"
+                android:textSize="18dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/border_black_context_gray"
+                android:text="계산">
+
+            </Button>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="340dp"
+            android:layout_height="450dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/table_border"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/scdream"
+                    android:text="날짜 ex)1/1"/>
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/table_border"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/scdream"
+                    android:text="시간 ex)7"/>
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date0"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time0"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date4"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time4"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date5"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time5"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date6"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time6"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date7"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time7"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date8"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time8"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date9"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time9"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date10"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time10"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date11"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time11"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date12"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time12"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date13"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time13"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date14"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time14"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date15"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time15"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date16"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time16"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date17"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time17"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date18"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time18"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/date19"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+                <EditText
+                    android:id="@+id/time19"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+
+                    android:background="@drawable/table_border"
+                    />
+
+
+
+            </TableRow>
+
+
+
+
+
+            <TableRow
+                android:layout_width="170dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/table_border"
+                    android:fontFamily="@font/scdream"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="급여"/>
+
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:text="SAVE"
+            android:textColor="@color/black"
+            android:fontFamily="@font/scdream"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/border_black_context_gray"
+            android:layout_height="60dp">
+
+        </Button>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

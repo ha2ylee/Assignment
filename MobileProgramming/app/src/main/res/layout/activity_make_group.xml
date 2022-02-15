@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MakeGroupActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="150dp"
+        android:elevation="50dp"
+        android:background="@drawable/layout_main">
+
+        <TextView
+            android:id="@+id/groupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/scdream"
+            android:text="그룹 이름"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/groupName"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/groupText"
+
+            />
+
+        <TextView
+            android:id="@+id/codeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/scdream"
+            android:text="코드 번호"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/codeNum"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/groupText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/groupText"
+
+            />
+
+        <Button
+            android:id="@+id/btn_makeGroup"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/codeNum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/border_layout"
+            android:text="CREATE"
+            android:textSize="20dp"
+            android:fontFamily="@font/scdream"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

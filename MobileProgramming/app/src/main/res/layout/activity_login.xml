@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E0E0E0"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="워커홀릭"
+       android:layout_marginTop="120dp"
+        android:textColor="#58555A"
+        android:textSize="45sp"
+        android:shadowColor ="#0f0f0f"
+        android:shadowRadius="2.0"
+        android:shadowDx="1.6"
+        android:shadowDy="1.8"
+        android:fontFamily="@font/elice"
+        />
+
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:inputType="textEmailAddress"
+        android:hint="  Email"
+        android:background="@drawable/border_layout"
+        android:fontFamily="@font/scdream"
+
+
+        />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:inputType="textPassword"
+        android:hint="  password"
+        android:fontFamily="@font/scdream"
+
+        android:background="@drawable/border_layout" />
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:backgroundTint="#C0C0C0"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_pwd"
+        android:layout_toRightOf="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Join"
+        android:backgroundTint="#C0C0C0"
+        android:textColor="@color/black"
+        android:onClick="joinClick"/>
+
+
+</RelativeLayout>
+
+

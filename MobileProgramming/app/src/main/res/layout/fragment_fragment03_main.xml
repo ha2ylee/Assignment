@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/border_layout"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:elevation="30px"
+    tools:context=".GroupRoomActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/scdream"
+                android:text="근무자 명단"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:drawableLeft="@drawable/notice2"
+                android:fontFamily="@font/scdream"
+                android:text="   이름을 작성하시고 저장버튼을 누르시면 이름이 저장됩니다."
+                android:textSize="10sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker1_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker1_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker2_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker2_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker3_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker3_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker4_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker4_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker5_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker5_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker6_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker6_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker7_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker7_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/worker8_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/scdream"
+
+                    android:hint="이름">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/worker8_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/border_black_context_gray"
+                    android:fontFamily="@font/scdream"
+                    android:text="근무기록표"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+
+                </Button>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/border_black_context_gray"
+                android:fontFamily="@font/scdream"
+                android:text="SAVE">
+
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

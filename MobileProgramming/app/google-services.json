@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601485215839",
+    "project_id": "firstproject-1a60e",
+    "storage_bucket": "firstproject-1a60e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601485215839:android:b3d8d53921f40346ae33ea",
+        "android_client_info": {
+          "package_name": "org.techtown.workerholic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601485215839-lrulngmefojoua9g98up4piqaacgdlq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.workerholic",
+            "certificate_hash": "f156ba99d02897e4612291072aaa914848dabae4"
+          }
+        },
+        {
+          "client_id": "601485215839-f9uthhqvm56b72gkm2r5og1niu3r1ej5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEX-4vYlyUv335uudXop3P9W88dvthXT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601485215839-f9uthhqvm56b72gkm2r5og1niu3r1ej5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

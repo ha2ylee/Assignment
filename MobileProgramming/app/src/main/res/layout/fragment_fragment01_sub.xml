@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="50dp"
+    android:background="@drawable/layout_main"
+    android:fontFamily="@font/scdream"
+    >
+
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:hint="글을 작성해 주세요"
+            android:fontFamily="@font/scdream"
+            android:inputType="textMultiLine"
+            android:lines="30"
+            android:maxLines="10"
+            android:textAlignment="center"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/scdream"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/border_black_context_gray"
+                android:text="SAVE"
+                android:textSize="18dp"
+                android:textColor="@color/black">
+
+            </Button>
+        </RelativeLayout>
+</LinearLayout>
+
+
+    </ScrollView>
+
+        </RelativeLayout>

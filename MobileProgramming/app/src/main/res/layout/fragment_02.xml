@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="50dp"
+            android:background="@drawable/layout_main"
+            android:fontFamily="@font/scdream"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/part1txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Part 1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part1_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/part1_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="~"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part1_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <TextView
+                    android:id="@+id/part1_edt"
+                    android:inputType="textMultiLine"
+                    android:fontFamily="@font/scdream"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:minLines="6"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:scrollbarFadeDuration="0"
+                    android:scrollbarSize="5dp"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </TextView>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/part2txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Part 2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part2_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/part2_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="~"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part2_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <TextView
+                    android:id="@+id/part2_edt"
+                    android:inputType="textMultiLine"
+                    android:lines="30"
+                    android:minLines="6"
+                    android:fontFamily="@font/scdream"
+
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </TextView>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/part3txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Part 3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part3_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/part3_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="~"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part3_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <TextView
+                    android:id="@+id/part3_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:inputType="textMultiLine"
+                    android:lines="30"
+                    android:fontFamily="@font/scdream"
+
+                    android:maxLines="10"
+                    android:minLines="6"
+                    android:scrollbars="vertical"></TextView>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/border_gray"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/part4txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Part 4"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part4_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/part4_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="~"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/part4_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <TextView
+                    android:id="@+id/part4_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:inputType="textMultiLine"
+                    android:lines="30"
+                    android:maxLines="10"
+                    android:fontFamily="@font/scdream"
+
+                    android:minLines="6"
+                    android:scrollbars="vertical"></TextView>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_write1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_black_context_gray"
+                android:text="EDIT"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="25dp"
+                android:fontFamily="@font/scdream"
+                android:textColor="@color/black">
+
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
